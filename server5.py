@@ -15,14 +15,13 @@ class BaseHandler(tornado.web.RequestHandler):
         
         self.set_status(204)
         self.finish()
-        print(args)
-        print(kwargs)
+        
     def initialize(self):
         
         self.db = mysql.connector.connect(
             host="localhost",
             user="root",          
-            password="12345",  
+            password="Password@123",  
             
             database="student_result"
         )
